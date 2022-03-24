@@ -20,6 +20,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: ./scripts/install_zig.sh
       - run: zig/zig build test
+      - run: zig/zig build lint
 
   build-and-push:
     runs-on: ubuntu-latest
